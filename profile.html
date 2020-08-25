@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        
+<!--    Font Awesome -->
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+.profile{
+    background: linear-gradient(50deg,#59bfe9, #4739c0,#6b00ff,#f55a98);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    background: #fff;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,.5),
+               -3px -3px 20px rgba(0,0,0,.5);
+}
+.photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transform: translateY(-80px);
+    z-index: 1;
+    box-shadow: 0px 5px 20px #5444E0
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.details{
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-40px);
+}
+.details h2{
+    font-size: 30px;
+    color: #8B4BE3;
+    line-height: 50px;
+}
+.details p{
+    font-size: 20px;
+    color: #000;;
+    line-height: 30px;
+}
+.details p i{
+    font-size: 25px;
+    padding-right: 15px;
+}
+.data{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.data .follow{
+    width: 30%;
+    text-align: center;
+    line-height: 1.5;
+    color: #333;
+}
+.icon{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.icon a{
+    font-size: 25px;
+    margin: 10px 15px;
+    margin-bottom: 30px;
+    color: #fff;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.Btn{
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.Btn button{
+    font-family: sans-serif;
+    width: 20%;
+    font-size: 20px;
+    margin: 30px 60px;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 2px 5px 15px rgba(0,0,0,.4);
+}
+.Btn button:focus{
+    transition: .6s;
+    box-shadow: 5px 10px 30px rgba(0,0,0,.6);
+}
+button.message {
+      background: linear-gradient(45deg, #1da1f2, #0e71c8);
+      box-shadow: 0px 4px 30px rgba(19, 127, 212, 0.4);
+}
+button.follow {
+      background: linear-gradient(45deg, #d5135a, #f05924);
+      box-shadow: 0px 4px 30px rgba(223, 45, 70, 0.35);
+}
+.facebook {
+        background: linear-gradient(45deg, #3b5998, #0078d7);
+        box-shadow: 0px 4px 30px rgba(43, 98, 169, 0.5);
+      }
+
+  .twitter {
+    background: linear-gradient(45deg, #1da1f2,#0e71c8);
+    box-shadow: 0px 4px 30px rgba(19, 127, 212, 0.7);
+  }
+
+  .instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  }
+
+  .behance {
+    background: linear-gradient(45deg, #1769ff, #213fca);
+    box-shadow: 0px 4px 30px rgba(27, 86, 231, 0.7);
+  }
+
+  .github {
+    background: linear-gradient(45deg, #333333, #626b73);
+    box-shadow: 0px 4px 30px rgba(63, 65, 67, 0.6);
+  }
+
+  .codepen {
+    background: linear-gradient(45deg, #324e63, #414447);
+    box-shadow: 0px 4px 30px rgba(55, 75, 90, 0.6);
+  }
+
+  .link {
+    background: linear-gradient(45deg, #d5135a, #f05924);
+    box-shadow: 0px 4px 30px rgba(223, 45, 70, 0.6);
+  }
+
+</style>
+</head>
+<body>
+   
+   <section class="profile">
+       <div class="container">
+           <div class="photo">
+               <img src="https://images.unsplash.com/photo-1541576980233-97577392db9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+           </div>
+           <div class="details">
+               <h2>Ankit Kumar</h2>
+               <p>Front-end developer from <b>Delhi</b></p>
+               <p><i class="fa fa-map-marker" aria-hidden="true"></i>Delhi, India</p>
+           </div>
+           <div class="data">
+               <div class="follow">
+                   <h2>1598</h2>
+                   <p>Followers</p>
+               </div>
+               <div class="follow">
+                   <h2>65</h2>
+                   <p>Following</p>
+               </div>
+               <div class="follow">
+                   <h2>123</h2>
+                   <p>Blogs</p>
+               </div>
+               <div class="follow">
+                   <h2>85</h2>
+                   <p>Works</p>
+               </div>
+           </div>
+           <div class="icon">
+               <a href="" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+               <a href="" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+               <a href="" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+               <a href="" class="github"><i class="fa fa-github" aria-hidden="true"></i></a>
+               <a href="" class="behance"><i class="fa fa-behance" aria-hidden="true"></i></a>
+               <a href="" class="codepen"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+               <a href="" class="link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+           </div>
+           <div class="Btn">
+               <button class="message">Message</button>
+               <button class="follow">Follow</button>
+           </div>
+       </div>
+   </section>
+    
+</body>
+</html>
